@@ -15,8 +15,23 @@ public class Point {
 		return x+","+y;
 	}
 	
+	@Override
+	public boolean equals(Object target) {
+		if(target!=null) {
+			if(target instanceof Point) {
+				Point point = (Point) target;
+				
+				if(x==point.x && y==point.y) {
+					return true;
+				}
+			}
+		
+		
+		
+	}
+		return false;
 	
-	
+	}
 }
 
 
